@@ -1,0 +1,114 @@
+html {
+  font-family: 'Lato', sans-serif; }
+  html body nav section {
+    margin: 25px 0; }
+    html body nav section h2 {
+      cursor: pointer;
+      text-transform: uppercase;
+      color: #85888d;
+      font-weight: 700;
+      font-size: 1em;
+      letter-spacing: 1px;
+      padding: 0 20px;
+      margin: 0; }
+    html body nav section ul {
+      padding: 0;
+      margin: 10px 0;
+      margin-left: 15px;
+      list-style: none; }
+      html body nav section ul li {
+        display: block; }
+        html body nav section ul li h3 {
+          display: block;
+          padding: 10px 20px;
+          color: #fff;
+          font-size: 1em; }
+  html body main {
+    /*
+    &.productos{
+    	background-color: yellow;
+    }
+    &.novedades{
+    	background-color: red;
+    }
+    &.contacto{
+    	background-color: blue;
+    }
+    */ }
+    html body main header {
+      padding: 25px 25px 0px 25px; }
+      html body main header button {
+        background-image: url("../images/menu-options.svg");
+        height: 35px;
+        width: 35px;
+        background-repeat: no-repeat;
+        background-color: #ffffff;
+        border: 0;
+        outline: 0; }
+      html body main header img {
+        width: 100%; }
+    html body main section {
+      display: none;
+      padding: 0 25px; }
+      html body main section.active {
+        display: block; }
+      html body main section header h1 {
+        text-align: center; }
+      html body main section article {
+        border-top: 3px solid #000000;
+        margin-bottom: 25px; }
+        html body main section article h1 {
+          margin-top: 10px;
+          margin-bottom: 10px; }
+        html body main section article h2 {
+          font-size: 1em;
+          margin-top: 0; }
+        html body main section article img {
+          width: 100%; }
+    html body main footer {
+      padding: 0 25px;
+      min-height: 200px;
+      background-color: grey;
+      border-top: 3px solid #000; }
+      html body main footer p {
+        text-align: center;
+        margin: 0;
+        padding-top: 25px;
+        font-weight: 700;
+        font-size: 1.2em; }
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: 256px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  background-color: coral;
+  background-color: #1D1F20;
+  background-image: linear-gradient(145deg, #1D1F20, #404348); }
+
+.slideout-panel {
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  background-color: #ffffff; }
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  overflow: hidden; }
+
+.slideout-open .slideout-menu {
+  display: block; }
+
+/*# sourceMappingURL=custom.css.map */
