@@ -54,10 +54,12 @@ html {
       text-transform: uppercase;
       color: #85888d;
       font-weight: 700;
-      font-size: 1em;
       letter-spacing: 1px;
       padding: 0 20px;
-      margin: 0; }
+      margin: 0;
+      text-align: left;
+      font-family: 'Atma', cursive;
+      font-size: 1.5em; }
     html body nav section ul {
       padding: 0;
       margin: 10px 0;
@@ -69,135 +71,105 @@ html {
           display: block;
           padding: 10px 20px;
           color: #fff;
-          font-size: 1em; }
-  html body main {
-    /*
-    &.productos{
-    	background-color: yellow;
-    }
-    &.novedades{
-    	background-color: red;
-    }
-    &.contacto{
-    	background-color: blue;
-    }
-    */ }
-    html body main header {
-      padding: 25px 25px 0px 25px; }
-      html body main header button {
-        background-image: url("../images/menu-options.svg");
-        height: 35px;
-        width: 35px;
-        background-repeat: no-repeat;
-        background-color: #ffffff;
-        border: 0;
-        outline: 0; }
-      html body main header img {
-        width: 100%; }
-    html body main section {
-      display: none;
-      padding: 0 25px;
-      margin-top: 20px; }
-      html body main section.active {
-        display: block; }
-      html body main section header {
-        padding-top: 0;
-        padding-bottom: 25px; }
-        html body main section header h1 {
-          text-align: center;
-          font-family: 'Atma', cursive;
-          font-size: 2.5em;
-          font-weight: 700; }
-      html body main section article {
-        border-top: 3px solid #000000;
-        margin-bottom: 25px; }
-        html body main section article h1 {
-          margin-top: 10px;
-          margin-bottom: 10px; }
-        html body main section article h2 {
-          font-size: 1em;
-          margin-top: 0; }
-        html body main section article img {
-          width: 100%; }
-      html body main section nav .items {
-        text-align: center;
-        margin-bottom: 25px; }
-        html body main section nav .items li {
-          font-family: 'Atma', cursive;
-          display: inline-block;
-          margin-right: 10px;
-          margin-bottom: 10px;
-          padding: 15px 15px;
-          background-color: #c2c2c2;
-          border-radius: 15px;
-          font-size: 1.3em;
-          font-weight: 700;
-          width: 90px;
-          border: 1px solid #000; }
-        html body main section nav .items .casa {
-          background-color: #50b156; }
-        html body main section nav .items .product {
-          background-color: #f58e3b; }
-        html body main section nav .items .news {
-          background-color: #db3236; }
-        html body main section nav .items .contact {
-          background-color: #397fc1; }
-        html body main section nav .items .games {
-          background-color: #22589e; }
-        html body main section nav .items .arras {
-          background-color: #e1df2d; }
-        html body main section nav .items .enhe {
-          background-color: #4cae52; }
-        html body main section nav .items .enca {
-          background-color: #4cbdd6; }
-        html body main section nav .items .vehi {
-          background-color: #f28635; }
-        html body main section nav .items .art {
-          background-color: #e73138; }
-    html body main footer {
-      padding: 0 25px;
-      min-height: 200px;
-      background-color: grey;
-      border-top: 3px solid #000; }
-      html body main footer p {
-        text-align: center;
-        margin: 0;
-        padding-top: 25px;
+          font-size: 1.5em; }
+  html body main header {
+    padding: 25px 25px 0px 25px; }
+    html body main header button {
+      background-image: url("../images/menu-options.svg");
+      height: 35px;
+      width: 35px;
+      background-repeat: no-repeat;
+      background-color: #ffffff;
+      border: 0;
+      outline: 0; }
+    html body main header img {
+      width: 100%;
+      cursor: pointer; }
+  html body main section {
+    display: none;
+    padding: 0 25px;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    html body main section.active {
+      display: block; }
+    html body main section header {
+      padding-top: 0;
+      padding-bottom: 25px;
+      background-image: url(../images/rbn-yellow.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      padding-bottom: 0px;
+      background-position: center top;
+      width: 93%;
+      margin: auto;
+      margin-bottom: 20px; }
+      html body main section header h1 {
+        font-family: 'Atma', cursive;
+        font-size: 1.5em;
         font-weight: 700;
-        font-size: 1.2em; }
-
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0; }
-
-.slideout-menu {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  width: 256px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  display: none;
-  background-color: coral;
-  background-color: #1D1F20;
-  background-image: linear-gradient(145deg, #1D1F20, #404348); }
-
-.slideout-panel {
-  position: relative;
-  z-index: 1;
-  will-change: transform;
-  background-color: #ffffff; }
-
-.slideout-open,
-.slideout-open body,
-.slideout-open .slideout-panel {
-  overflow: hidden; }
-
-.slideout-open .slideout-menu {
-  display: block; }
+        line-height: 1.7em;
+        color: white;
+        text-align: center; }
+    html body main section article {
+      border-top: 3px solid #000000;
+      margin-bottom: 25px; }
+      html body main section article:first-of-type {
+        border-top: 0; }
+      html body main section article h1 {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      html body main section article h2 {
+        font-size: 1em;
+        margin-top: 0; }
+      html body main section article img {
+        width: 100%; }
+    html body main section nav .items {
+      text-align: center;
+      margin-bottom: 25px; }
+      html body main section nav .items li {
+        font-family: 'Atma', cursive;
+        display: inline-block;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        padding: 8px 10px;
+        font-weight: 700;
+        width: 125px;
+        margin-left: 0;
+        font-size: 1.3em;
+        line-height: 1.4em;
+        border-radius: 25px; }
+        html body main section nav .items li:nth-child(even) {
+          margin-right: 0; }
+      html body main section nav .items .casa {
+        background-color: #50b156; }
+      html body main section nav .items .product {
+        background-color: #f58e3b; }
+      html body main section nav .items .news {
+        background-color: #db3236; }
+      html body main section nav .items .contact {
+        background-color: #397fc1; }
+      html body main section nav .items .games {
+        background-color: #22589e; }
+      html body main section nav .items .arras {
+        background-color: #cb99c5; }
+      html body main section nav .items .enhe {
+        background-color: #4cae52; }
+      html body main section nav .items .enca {
+        background-color: #4cbdd6; }
+      html body main section nav .items .vehi {
+        background-color: #f28635; }
+      html body main section nav .items .art {
+        background-color: #e73138; }
+  html body footer {
+    padding: 0 25px;
+    min-height: 200px;
+    background-color: grey;
+    border-top: 3px solid #000; }
+    html body footer p {
+      text-align: center;
+      margin: 0;
+      padding-top: 25px;
+      font-weight: 700;
+      font-size: 1.2em; }
 
 /*# sourceMappingURL=custom.css.map */

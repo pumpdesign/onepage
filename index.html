@@ -11,8 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Atma" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/button.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/slideout.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/custom.css" media="screen" title="no title" charset="utf-8">
-
   </head>
   <body>
 
@@ -42,16 +43,15 @@
     <main id="panel">
       <header>
         <button class="toggle-button"></button>
-        <img src="images/logo.jpg" alt="">
+        <img src="images/logo.jpg" alt="" data-index="home">
       </header>
-
         <section class="home active">
           <nav id="homenav">
             <div class="items">
-              <li class="casa" data-name="home">Home</li>
-              <li class="product" data-name="productos">Productos</li>
-              <li class="news" data-name="novedades">Novedades</li>
-              <li class="contact" data-name="contacto">Contacto</li>
+              <li class="casa btn-gradient" data-name="home">Home</li>
+              <li class="product btn-gradient" data-name="productos">Productos</li>
+              <li class="news btn-gradient" data-name="novedades">Novedades</li>
+              <li class="contact btn-gradient" data-name="contacto">Contacto</li>
             </div>
           </nav>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -81,12 +81,12 @@
           <header><h1>Productos</h1></header>
           <nav id="productnav">
             <div class="items">
-              <li class="games" data-name="juegos">Juegos</li>
-              <li class="arras" data-name="arrastres">Arrastres</li>
-              <li class="enhe" data-name="enhebrados">Enhebrados</li>
-              <li class="enca" data-name="encaja">En Caja</li>
-              <li class="vehi" data-name="vehiculos">Vehiculos</li>
-              <li class="art" data-name="arte">Arte</li>
+              <li class="games btn-gradient" data-name="juegos">Juegos</li>
+              <li class="arras btn-gradient" data-name="arrastres">Arrastres</li>
+              <li class="enhe btn-gradient" data-name="enhebrados">Enhebrados</li>
+              <li class="enca btn-gradient" data-name="encaja">En Caja</li>
+              <li class="vehi btn-gradient" data-name="vehiculos">Vehículos</li>
+              <li class="art btn-gradient" data-name="arte">Arte</li>
             </div>
           </nav>
           <article><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -293,11 +293,10 @@
                 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </article>
         </section>
-      <footer>
-        <p>Juegos Kurimi - 2016</p>
-      </footer>
     </main>
-
+    <footer>
+      <p>&copy;	Juegos Kurimi - 2016</p>
+    </footer>
 
     <script src="js/slideout/dist/slideout.min.js"></script>
     <script src="js/index.js"></script>
