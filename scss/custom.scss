@@ -80,18 +80,8 @@ html{
 				}
 			}
 		}
+
 		main{
-			/*
-			&.productos{
-				background-color: yellow;
-			}
-			&.novedades{
-				background-color: red;
-			}
-			&.contacto{
-				background-color: blue;
-			}
-			*/
 			header{
 				padding: 25px 25px 0px 25px;
 				button{
@@ -104,7 +94,8 @@ html{
 					outline: 0;
 				}
 				img{
-					width:100%
+					width:100%;
+					cursor: pointer;
 				}
 			}
 			section{
@@ -126,7 +117,7 @@ html{
 				}
 				article{
 			    border-top: 3px solid #000000;
-					margin-bottom: 25px;					
+					margin-bottom: 25px;
 					h1{
 						margin-top: 10px;
 						margin-bottom: 10px;
@@ -189,19 +180,18 @@ html{
 					}
 				}
 			}
-
-			footer{
-				padding: 0 25px;
-	    	min-height: 200px;
-	    	background-color: grey;
-	    	border-top: 3px solid #000;
-				p{
-					text-align: center;
-					margin: 0;
-					padding-top: 25px;
-					font-weight: 700;
-					font-size: 1.2em;
-				}
+		}
+		footer{
+			padding: 0 25px;
+			min-height: 200px;
+			background-color: grey;
+			border-top: 3px solid #000;
+			p{
+				text-align: center;
+				margin: 0;
+				padding-top: 25px;
+				font-weight: 700;
+				font-size: 1.2em;
 			}
 		}
 	}
