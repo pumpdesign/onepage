@@ -113,14 +113,19 @@ html{
 				}
 			}
 			section{
-				display: none;
-				padding: 0 25px;
-				padding-bottom: 50px;
-				margin-top: 20px;
-		    margin-bottom: 20px;
+				//display: none;
 		    text-align: justify;
+				opacity: 0;
+				height: 0;
 				&.active{
-					display:block;
+					//display:block;
+					transition: opacity 1s linear;
+					opacity: 1;
+					padding: 0 25px;
+					padding-bottom: 50px;
+					margin-top: 20px;
+			    margin-bottom: 20px;
+			    height: auto;
 				}
 				header{
 					padding-top: 0;
@@ -225,12 +230,14 @@ html{
 				min-height: 200px;
 				background-color: #fec333;
 				border-top: 3px solid #363435;
+				padding-top: 40px;
+
 				p{
 					text-align: center;
 					margin: 0;
-					padding-top: 25px;
 					font-weight: 700;
-					font-size: 1.2em;
+					font-size: 1em;
+					line-height: 2em;
 				}
 			}
 		}
