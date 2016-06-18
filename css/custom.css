@@ -94,6 +94,7 @@ html {
   html body main section {
     display: none;
     padding: 0 25px;
+    padding-bottom: 50px;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: justify; }
