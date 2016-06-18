@@ -8,7 +8,7 @@ function init(){
   sectionsLength = sections.length;
   html = document.getElementsByTagName('html')[0];
   panel = document.getElementById('panel');
-  logo = panel.getElementsByTagName('img')[0];
+  logo = panel.getElementsByTagName('img')[1];
 
   menu.addEventListener("click", processMenu,false);
   navbar.addEventListener("click", processNav,false);
@@ -28,7 +28,6 @@ function processMenu(ev){
         } else {
           sections[i].className = classnames.split(' ')[0];
           var view = document.getElementById('panel').getElementsByClassName(section)[0];
-          console.log( document.getElementById('panel').getElementsByClassName(section));
           view.className = view.className + ' active';
           panel.className = 'slideout-panel' + ' ' + section;
           slideout.close(); // traigo la que tocó
@@ -61,7 +60,6 @@ function processNav(ev){
 
 function processLogo(ev){
   var sectionIndex = ev.target.dataset.index;
-
   if (sectionIndex){
     for(i = 0 ; i < sectionsLength ; i++) {
       var classnames = sections[i].className;
@@ -80,32 +78,6 @@ function processLogo(ev){
   }
 }
 
-
 window.onload = function() {
   init();
 };
-
-/*
-function(ev){
- var section = ev.target.dataset.name;
- if (section){
-   for(i = 0 ; i < sectionsLength ; i++) {
-     var classnames = sections[i].className;
-     if (classnames.split(' ')[1] === 'active'){
-       if (classnames.split(' ')[0] === section) {
-         //slideout.close(); //no hago nada
-         return;
-       } else {
-         sections[i].className = classnames.split(' ')[0];
-         //slideout.close(); // traigo la que tocó
-         var view = document.getElementById('panel').getElementsByClassName(section)[0];
-         view.className = view.className + ' active';
-         panel.className = 'slideout-panel' + ' ' + section;
-         return;
-       }
-     }
-   }
- }
-}
-
- */
