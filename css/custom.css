@@ -144,11 +144,11 @@ html {
       html body main section nav .items li {
         font-family: 'Atma', cursive;
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 5px;
         margin-bottom: 10px;
         padding: 8px 10px;
         font-weight: 700;
-        width: 125px;
+        width: 130px;
         margin-left: 0;
         font-size: 1.3em;
         line-height: 1.4em;
