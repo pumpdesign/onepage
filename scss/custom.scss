@@ -118,6 +118,7 @@ html{
 		    text-align: justify;
 				opacity: 0;
 				height: 0;
+		    transform: translate(99900px);
 				&.active{
 					//display:block;
 					transition: opacity 1s cubic-bezier(0.39, 0.58, 0.57, 1);
@@ -127,6 +128,7 @@ html{
 					margin-top: 20px;
 			    margin-bottom: 20px;
 			    height: auto;
+			    transform: translate(0px);
 				}
 				header{
 					padding-top: 0;
@@ -204,9 +206,11 @@ html{
 						}
 						.product{
 							background-color: #f58e3b;
+							background-color: #50b156;
 						}
 						.news{
 							background-color: #db3236;
+							//background-color: #f58e3b;
 						}
 						.contact{
 					    background-color: #397fc1;
@@ -241,6 +245,10 @@ html{
 					font-family: 'Oswald', sans-serif;
 					font-weight: 400;
 					padding: 0px 20px;
+					&.suscribe{
+						text-align: center;
+						margin-top: 25px;
+					}
 				}
 			}
 			footer{
