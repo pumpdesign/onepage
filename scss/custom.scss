@@ -94,7 +94,7 @@ html{
 					height: 35px;
 					width: 35px;
 					background-repeat: no-repeat;
-					background-color: #ffffff;
+					background-color: inherit;
 					border: 0;
 					outline: 0;
 				}
@@ -103,7 +103,7 @@ html{
 					cursor: pointer;
 					//margin-top: 20px;
 					//margin-bottom: 15px;
-					-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+					-webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
 
 				}
 				.ribbon{
