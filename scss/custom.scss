@@ -1,69 +1,21 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-html{
+html {
 	font-family: 'Lato', sans-serif;
-	body{
-		nav{
-			section{
-		    margin: 22px 0;
-				h2{
-					cursor:pointer;
-					text-transform: uppercase;
-					color: #85888d;
-					font-weight: 700;
-					letter-spacing: 1px;
-					padding: 0 20px;
-					margin: 0;
-					text-align: left;
-					font-family: 'Atma', cursive;
-		    	font-size: 1.5em;
+	body {
+		nav {
+			section {
+		    	margin: 22px 0;
+				h2 {
+						cursor: pointer;
+						text-transform: uppercase;
+						color: #85888d;
+						font-weight: 700;
+						letter-spacing: 1px;
+						padding: 0 20px;
+						margin: 0;
+						text-align: left;
+						font-family: 'Atma', cursive;
+			    	font-size: 1.5em;
 				}
 				ul{
 					padding: 0;
@@ -152,7 +104,7 @@ html{
 				}
 				article{
 			    border-top: 3px solid #000000;
-					margin-bottom: 25px;
+					margin-bottom: 50px;
 					text-align: justify;
 					&:first-of-type{
 						border-top: 0;
@@ -168,11 +120,11 @@ html{
 					}
 					h2{
 						font-size: 1em;
-						margin-top: 0;
-						color: #000000;
-				    text-align: justify;
-						line-height: 1.2em;
-
+					 margin-top: 0;
+					 color: #000000;
+					 text-align: justify;
+					 line-height: 1.3em;
+					 font-weight: 400;
 					}
 					img{
 						width: 100%;
@@ -256,14 +208,21 @@ html{
 				min-height: 200px;
 				background-color: #fec333;
 				border-top: 3px solid #363435;
-				padding-top: 40px;
+				padding-top: 20px;
 
 				p{
 					text-align: center;
 					margin: 0;
 					font-weight: 700;
 					font-size: 1em;
-					line-height: 2em;
+					line-height: 1.35em;
+				}
+				.carrito{
+					position: absolute;
+					bottom: 25px;
+					left: calc(50% - 63px);
+					height: 50px;
+					width: auto;
 				}
 			}
 		}
