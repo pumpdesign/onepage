@@ -17,6 +17,7 @@ function init(){
 }
 
 function processMenu(ev){
+  ev.preventDefault();
   var section = ev.target.dataset.name;
   if (section){
     for(i = 0 ; i < sectionsLength ; i++) {
@@ -39,6 +40,7 @@ function processMenu(ev){
 }
 
 function processNav(ev){
+  ev.preventDefault();
   var section = ev.target.dataset.name;
   if (section){
     for(i = 0 ; i < sectionsLength ; i++) {
@@ -59,6 +61,7 @@ function processNav(ev){
 }
 
 function processLogo(ev){
+  ev.preventDefault();
   var sectionIndex = ev.target.dataset.index;
   if (sectionIndex){
     for(i = 0 ; i < sectionsLength ; i++) {
