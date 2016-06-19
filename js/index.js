@@ -14,6 +14,10 @@ function init(){
   navbar.addEventListener("click", processNav,false);
   productnav.addEventListener("click", processNav ,false);
   logo.addEventListener("click", processLogo,false);
+  setTimeout(function(){
+    document.body.style.opacity = "1";
+  },200);
+
 }
 
 function processMenu(ev){
