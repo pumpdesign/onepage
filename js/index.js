@@ -16,7 +16,7 @@ function init(){
   logo.addEventListener("click", processLogo,false);
   setTimeout(function(){
     document.body.style.opacity = "1";
-  },200);
+  },750);
 
 }
 
