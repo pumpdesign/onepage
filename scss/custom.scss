@@ -1,10 +1,10 @@
 
 html {
-	font-family: 'Lato', sans-serif;
-	body {
-		opacity: 0;
-		nav {
-			section {
+  font-family: 'Lato', sans-serif;
+  body {
+	  opacity: 0;
+    nav {
+      section {
 		    	margin: 22px 0;
 				h2 {
 						cursor: pointer;
@@ -72,6 +72,7 @@ html {
 				opacity: 0;
 				height: 0;
 		    transform: translate(99900px);
+        width: 100%;
 				&.active{
 					//display:block;
 					transition: opacity 1s cubic-bezier(0.39, 0.58, 0.57, 1);
