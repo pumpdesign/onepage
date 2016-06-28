@@ -9,6 +9,8 @@ function init(){
   html = document.getElementsByTagName('html')[0];
   panel = document.getElementById('panel');
   logo = panel.getElementsByTagName('img')[1];
+  productos = panel.getElementsByTagName('section');
+  console.log(document.querySelectorAll('#panel section header h1'));
 
   menu.addEventListener("click", processMenu,false);
   navbar.addEventListener("click", processNav,false);
